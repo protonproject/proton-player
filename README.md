@@ -11,7 +11,7 @@ The super cool video player
 First, clone the repo via git:
 
 ```bash
-git clone https://github.com/thesabbir/splayer.git
+git clone https://github.comt/protonproject/proton-player.git
 ```
 
 And then install dependencies.

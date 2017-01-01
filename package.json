@@ -71,16 +71,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thesabbir/splayer.git"
+    "url": "git+https://github.com/protonproject/proton-player"
   },
   "author": {
     "name": "Sabbir Ahmed",
     "email": "sabbiirr@gmail.com",
-    "url": "https://github.com/thesabbir"
+    "url": "https://sabbir.io"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thesabbir/splayer/issues"
+    "url": "https://github.com/protonproject/proton-player/issues"
   },
   "keywords": [
     "electron",
@@ -91,7 +91,7 @@
     "webpack",
     "react-hot"
   ],
-  "homepage": "https://github.com/thesabbir/splayer#readme",
+  "homepage": "https://github.com/protonproject/proton-player",
   "devDependencies": {
     "asar": "^0.12.3",
     "babel-core": "^6.21.0",
