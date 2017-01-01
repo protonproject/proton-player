@@ -1,6 +1,6 @@
 {
-  "name": "SPlayer",
-  "productName": "SPlayer",
+  "name": "Proton",
+  "productName": "Proton",
   "version": "1.0.0",
   "description": "Super Cool Video Player",
   "main": "./main.js",

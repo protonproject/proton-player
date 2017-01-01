@@ -1,7 +1,8 @@
 
-# Super Cool Video Player
+# Proton
+The super cool video player
 
-Work in Progress
+**Work in Progress**
 
 ## Install
 

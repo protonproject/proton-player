@@ -9,9 +9,9 @@ export default function registerMenu(mainWindow) {
   let template;
   if (process.platform === 'darwin') {
     template = [{
-      label: 'SPlayer',
+      label: 'Proton',
       submenu: [{
-        label: 'About SPlayer',
+        label: 'About Proton',
         selector: 'orderFrontStandardAboutPanel:'
       }, {
         type: 'separator'
@@ -21,7 +21,7 @@ export default function registerMenu(mainWindow) {
       }, {
         type: 'separator'
       }, {
-        label: 'Hide SPlayer',
+        label: 'Hide Proton',
         accelerator: 'Command+H',
         selector: 'hide:'
       }, {

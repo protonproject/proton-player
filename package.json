@@ -1,6 +1,6 @@
 {
-  "name": "SPlayer",
-  "productName": "SPlayer",
+  "name": "Proton",
+  "productName": "Proton",
   "version": "0.1.0",
   "description": "Super Cool Video Player",
   "main": "main.js",
@@ -26,8 +26,8 @@
     "cleanup": "mop -v"
   },
   "build": {
-    "productName": "SPlayer",
-    "appId": "io.sabbir.SPlayer",
+    "productName": "Proton",
+    "appId": "io.protonproject.Proton",
     "category": "public.app-category.video",
     "dmg": {
       "contents": [
