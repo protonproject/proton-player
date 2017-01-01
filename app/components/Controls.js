@@ -7,7 +7,7 @@ import styles from './Controls.css';
 
 class Controls extends Component {
   static propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     progress: PropTypes.number.isRequired
   };
 
