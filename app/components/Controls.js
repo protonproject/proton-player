@@ -15,19 +15,19 @@ class Controls extends Component {
     return (
       <div className={styles.container}>
         <div className="row middle-lg middle-xs center-xs ">
-          <div className="col-lg-8 floating">
+          <div className={`col-lg-8 ${styles.floating}`}>
             <p className={styles.title}>{this.props.title || 'Ohe!'}</p>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xs-4 col-lg-2 center-xs center-lg middle-xs middle-lg">
+        <div className={`row ${styles.controlPanel}`}>
+          <div className="col-xs-4 col-md-3 col-lg-2 center-xs center-lg middle-xs middle-lg">
             <div className="box icon-container large-icons center-block">
               <button className="button"><i className="icon-control-rewind"/></button>
               <button className="button"><i className="icon-control-play"/></button>
               <button className="button"><i className="icon-control-forward"/></button>
             </div>
           </div>
-          <div className="col-xs-5 col-lg-8 middle-xs middle-lg">
+          <div className="col-xs-5 col-md-6 col-lg-8 middle-xs middle-lg">
             <Line
               percent={this.props.progress}
               strokeWidth="0.5"
@@ -37,7 +37,7 @@ class Controls extends Component {
               strokeLinecap="square"
             />
           </div>
-          <div className="col-xs-3 col-lg-2 center-lg center-xs middle-lg middle-xs">
+          <div className="col-xs-3 col-md-3 col-lg-2 center-lg center-xs middle-lg middle-xs">
             <div className="box icon-container medium-icons center-block">
               <button className="button"><i className="icon-volume-2"/></button>
               <button className="button"><i className="icon-settings"/></button>

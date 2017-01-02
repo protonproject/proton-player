@@ -6,6 +6,16 @@
 }
 
 .title {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: lighter;
+  color: #cacaca;
+}
+
+.controlPanel {
+  margin-top: 5px;
+}
+
+.floating {
+  position: absolute;
+  top: -14%;
 }
