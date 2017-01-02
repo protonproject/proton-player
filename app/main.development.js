@@ -41,7 +41,7 @@ const installExtensions = async() => {
   }
 };
 
-app.on('ready', async () => {
+app.on('ready', async() => {
   await installExtensions();
   mainWindow = new BrowserWindow({
     show: false,
@@ -52,7 +52,8 @@ app.on('ready', async () => {
     titleBarStyle: 'hidden',
     title: 'ohe!'
   });
-
+  const { height, width } = require('electron').screen.getPrimaryDisplay().workArea; //eslint-disable-line global-require
+  mainWindow.setAspectRatio(width / height);
   mainWindow.loadURL(`file://${__dirname}/app.html`);
 
   mainWindow.webContents.on('did-finish-load', () => {
