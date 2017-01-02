@@ -1,3 +1,4 @@
+@import "~normalize.css/normalize.css";
 @import "~simple-line-icons/css/simple-line-icons.css";
 @import "~flexboxgrid/css/flexboxgrid.css";
 
@@ -6,10 +7,9 @@ body {
   -webkit-user-select: none;
   position: relative;
   color: white;
-  height: 100vh;
   background: #10141d;
-  font-family: SansSerif, Helvetica, Helvetica Neue, serif;
-  overflow-y: hidden;
+  font-family: BlinkMacSystemFont, SansSerif, Helvetica, Helvetica Neue, serif;
+  overflow: hidden;
 }
 
 h2 {
@@ -48,11 +48,6 @@ button {
 
 button:focus {
   outline: none;
-}
-
-.floating {
-  position: absolute;
-  top: -27%;
 }
 
 .large-icons i {
