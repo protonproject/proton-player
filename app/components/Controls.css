@@ -1,16 +1,11 @@
 .container {
-  padding: 10px;
+  padding: 15px 20px 20px 20px;
   background: transparent;
   position: absolute;
   width: 100%;
 }
-.buttons {
-  padding: 7px 5px;
-}
-.buttons > i {
-  padding: 5px;
-}
 
 .title {
-  font-size: smaller;
+  font-size: 15px;
+  font-weight: lighter;
 }

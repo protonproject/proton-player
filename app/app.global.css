@@ -1,5 +1,6 @@
 @import "~simple-line-icons/css/simple-line-icons.css";
 @import "~flexboxgrid/css/flexboxgrid.css";
+
 body {
   -webkit-app-region: drag;
   -webkit-user-select: none;
@@ -37,4 +38,30 @@ a:hover {
   opacity: 1;
   text-decoration: none;
   cursor: pointer;
+}
+
+button {
+  background: none;
+  color: white;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.icon-container {
+  /*padding: 2px 0;*/
+}
+.floating {
+  position: absolute;
+  top: -27%;
+}
+
+.large-icons i {
+  font-size: 19px;
+}
+
+.medium-icons i {
+  font-size: 17px;
 }
