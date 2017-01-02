@@ -8,6 +8,7 @@ import {
   IndexRoute
 } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
+import { webFrame } from 'electron';
 
 import configureStore from './store/configureStore';
 import './app.global.css';
@@ -15,6 +16,8 @@ import App from './containers/App';
 import VideoPlayer from './containers/VideoPlayer';
 import SettingsPage from './containers/SettingsPage';
 import initialState from './store/initialState';
+
+webFrame.setVisualZoomLevelLimits(1, 1);
 
 const store = configureStore(initialState);
 const history = syncHistoryWithStore(hashHistory, store);
