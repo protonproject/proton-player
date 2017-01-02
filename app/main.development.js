@@ -47,7 +47,10 @@ app.on('ready', async () => {
     show: false,
     width: 1024,
     height: 728,
-    titleBarStyle: 'hidden'
+    minWidth: 416,
+    minHeight: 312,
+    titleBarStyle: 'hidden',
+    title: 'ohe!'
   });
 
   mainWindow.loadURL(`file://${__dirname}/app.html`);
