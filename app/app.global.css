@@ -50,9 +50,6 @@ button:focus {
   outline: none;
 }
 
-.icon-container {
-  /*padding: 2px 0;*/
-}
 .floating {
   position: absolute;
   top: -27%;
