@@ -15,6 +15,7 @@ class Player {
     this.options = options;
     this.vlc = wcjs.createPlayer();
     this.eventNames = Object.keys(supportedEvents).map(key => supportedEvents[key]);
+    this.vlc.playlist.mode = this.vlc.playlist.Loop;
     if (this.options.debug) {
       window.player = this;
       console.log(`Debug mode wcjs ${this.vlc.vlcVersion}`); //eslint-disable-line
