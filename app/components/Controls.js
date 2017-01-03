@@ -8,7 +8,9 @@ import styles from './Controls.css';
 class Controls extends Component {
   static propTypes = {
     title: PropTypes.string,
-    progress: PropTypes.number.isRequired
+    progress: PropTypes.number.isRequired,
+    togglePause: PropTypes.func.isRequired,
+    playing: PropTypes.bool.isRequired
   };
 
   render() {
@@ -23,7 +25,11 @@ class Controls extends Component {
           <div className="col-xs-4 col-md-3 col-lg-2 center-xs center-lg middle-xs middle-lg">
             <div className="box icon-container large-icons center-block">
               <button className="button"><i className="icon-control-rewind"/></button>
-              <button className="button"><i className="icon-control-play"/></button>
+              <button className="button" onClick={this.props.togglePause}>
+                <i
+                  className={this.props.playing ? 'icon-control-pause' : 'icon-control-play'}
+                />
+              </button>
               <button className="button"><i className="icon-control-forward"/></button>
             </div>
           </div>

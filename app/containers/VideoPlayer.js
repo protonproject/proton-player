@@ -9,7 +9,7 @@ import * as PlayerActions from '../actions/playerActions';
 
 function mapStateToProps(state) {
   return {
-    nowPlaying: state.player.nowPlaying
+    ...state.player
   };
 }
 

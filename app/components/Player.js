@@ -4,14 +4,17 @@ import React, {
 } from 'react';
 import Controls from './Controls';
 import styles from './Player.css';
-
+import * as playerEvents from '../constants/supportedEvents';
 
 class Player extends Component {
   static propTypes = {
     renderVideo: PropTypes.func.isRequired,
     play: PropTypes.func.isRequired,
     addEventLister: PropTypes.func.isRequired,
-    nowPlaying: PropTypes.object.isRequired //eslint-disable-line react/forbid-prop-types
+    togglePause: PropTypes.func.isRequired,
+    nowPlaying: PropTypes.object.isRequired, //eslint-disable-line react/forbid-prop-types
+    playing: PropTypes.bool.isRequired,
+    syncPlayerState: PropTypes.func.isRequired
   };
 
   constructor() {
@@ -25,11 +28,12 @@ class Player extends Component {
     document.addEventListener('dragover', e => e.preventDefault());
     document.addEventListener('drop', this.onDrop);
     this.props.renderVideo(this.playerCanvas);
-    this.props.addEventLister('onPositionChanged', (position) => {
+    this.props.addEventLister(playerEvents.POSITION_CHANGED, (position) => {
       this.setState({
         progress: position * 100
       });
     });
+    this.props.syncPlayerState();
   }
 
   componentWillUnmount() {
@@ -45,7 +49,12 @@ class Player extends Component {
   render() {
     return (
       <div>
-        <Controls progress={this.state.progress} {...this.props.nowPlaying}/>
+        <Controls
+          progress={this.state.progress}
+          {...this.props.nowPlaying}
+          togglePause={this.props.togglePause}
+          playing={this.props.playing}
+        />
         <canvas
           className={styles.player}
           ref={(playerCanvas) => { this.playerCanvas = playerCanvas; }}
