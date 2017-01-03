@@ -2,6 +2,7 @@
  * @flow
  */
 import * as types from '../constants/actionTypes';
+import * as events from '../constants/supportedEvents';
 
 type Action = {
   type: string,
@@ -21,9 +22,9 @@ export function play(path: string): Action {
   };
 }
 
-export function pause(): CommandAction {
+export function togglePause(): CommandAction {
   return {
-    type: types.PAUSE
+    type: types.TOGGLE_PAUSE
   };
 }
 
@@ -46,3 +47,22 @@ export function addEventLister(eventName: string, callback: Function): Action {
   };
 }
 
+export function updatePlaybackStatus(value: boolean): Action {
+  return {
+    type: types.PLAYBACK_STATUS_CHANGED,
+    payload: {
+      playing: value
+    }
+  };
+}
+
+export function syncPlayerState() {
+  return (dispatch: Function) => {
+    dispatch(addEventLister(events.PLAYING, () => {
+      dispatch(updatePlaybackStatus(true));
+    }));
+    dispatch(addEventLister(events.PAUSED, () => {
+      dispatch(updatePlaybackStatus(false));
+    }));
+  };
+}
