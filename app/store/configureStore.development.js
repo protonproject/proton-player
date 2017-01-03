@@ -32,7 +32,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
   compose;
 /* eslint-enable no-underscore-dangle */
 const enhancer = composeEnhancers(
-  applyMiddleware(playerMiddleware(player), thunk, router, logger)
+  applyMiddleware(thunk, playerMiddleware(player), router, logger)
 );
 
 export default function configureStore(initialState: Object | void) {
