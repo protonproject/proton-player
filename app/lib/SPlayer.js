@@ -4,15 +4,17 @@
 
 import wcjs from 'wcjs-prebuilt';
 import render from 'wcjs-renderer';
-import supportedEvents from '../utils/supportedEvents';
+import * as supportedEvents from '../constants/supportedEvents';
 
 class Player {
   vlc: Object;
   options: Object;
+  eventNames: Array<string>;
 
   constructor(options: Object = {}) {
     this.options = options;
     this.vlc = wcjs.createPlayer();
+    this.eventNames = Object.keys(supportedEvents).map(key => supportedEvents[key]);
     if (this.options.debug) {
       window.player = this;
       console.log(`Debug mode wcjs ${this.vlc.vlcVersion}`); //eslint-disable-line
@@ -40,30 +42,21 @@ class Player {
     return items;
   };
 
-  playOrPause(): boolean {
+  togglePause = (): boolean => {
     this.vlc.togglePause();
     return this.isPlaying();
-  }
+  };
 
-  isPlaying(): boolean {
-    return this.vlc.playing;
-  }
+  isPlaying = (): boolean => !this.vlc.playing;
 
-  isMute(): boolean {
-    return this.vlc.mute;
-  }
+  isMute = (): boolean => this.vlc.mute;
 
-  getPosition(): number {
-    return this.vlc.position * 100;
-  }
+  getPosition = (): number => this.vlc.position * 100;
 
-  setPosition(value: number): number {
-    this.vlc.position = (value / 100);
-    return this.getPosition();
-  }
+  setPosition = (value: number): number => (this.vlc.position = (value / 100));
 
-  addEventListener(eventName: string, callback: Function) {
-    if (supportedEvents.includes(eventName)) {
+  addEventListener = (eventName: string, callback: Function) => {
+    if (this.eventNames.includes(eventName)) {
       this.vlc[eventName] = callback;
     } else {
       throw Error(`${eventName} is a not a valid player event`);
