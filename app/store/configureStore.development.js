@@ -6,9 +6,6 @@ import createLogger from 'redux-logger';
 import rootReducer from '../reducers';
 import * as playerActions from '../actions/playerActions';
 import playerMiddleware from '../lib/playerMiddleware';
-import SPlayer from '../lib/SPlayer';
-
-const player = new SPlayer({ debug: true });
 
 const actionCreators = {
   playerActions,
@@ -32,7 +29,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
   compose;
 /* eslint-enable no-underscore-dangle */
 const enhancer = composeEnhancers(
-  applyMiddleware(thunk, playerMiddleware(player), router, logger)
+  applyMiddleware(thunk, playerMiddleware, router, logger)
 );
 
 export default function configureStore(initialState: Object | void) {
