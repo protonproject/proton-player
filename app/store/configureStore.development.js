@@ -1,14 +1,29 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import {
+  createStore,
+  applyMiddleware,
+  compose
+} from 'redux';
 import thunk from 'redux-thunk';
 import { hashHistory } from 'react-router';
-import { routerMiddleware, push } from 'react-router-redux';
+import {
+  routerMiddleware,
+  push
+} from 'react-router-redux';
 import createLogger from 'redux-logger';
 import rootReducer from '../reducers';
 import * as playerActions from '../actions/playerActions';
 import playerMiddleware from '../lib/playerMiddleware';
 
+let fire;
+try {
+  fire = require('../actions/fireSomeActions'); //eslint-disable-line global-require
+} catch (e) {
+  fire = {};
+}
+
 const actionCreators = {
   playerActions,
+  fire,
   push
 };
 
