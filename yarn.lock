@@ -2610,6 +2610,10 @@ electron-localshortcut@^0.6.0:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/electron-localshortcut/-/electron-localshortcut-0.6.1.tgz#c4e268c38a6e42f40de5618fc906d1ed608f11aa"
 
+electron-localshortcut@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/electron-localshortcut/-/electron-localshortcut-1.0.0.tgz#e9c1ba267c75376e1b254af206b9ff856360a67a"
+
 electron-macos-sign@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/electron-macos-sign/-/electron-macos-sign-1.4.0.tgz#9065ffcfc77db9cc41a521b97081d5193e371c84"
