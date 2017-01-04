@@ -1,4 +1,6 @@
-THE FOLLOWING SETS FORTH ATTRIBUTION NOTICES FOR THIRD PARTY SOFTWARE THAT MAY BE CONTAINED IN PORTIONS OF THE SPLAYER PRODUCT.
+info "7zip-bin-linux@1.0.3" is an optional dependency and failed compatibility check. Excluding it from installation.
+info "7zip-bin-win@2.0.2" is an optional dependency and failed compatibility check. Excluding it from installation.
+THE FOLLOWING SETS FORTH ATTRIBUTION NOTICES FOR THIRD PARTY SOFTWARE THAT MAY BE CONTAINED IN PORTIONS OF THE PROTON PRODUCT.
 
 -----
 
@@ -282,9 +284,9 @@ Apache License
 
 -----
 
-The following software may be included in this product: acorn, babylon. A copy of the source code may be downloaded from https://github.com/ternjs/acorn.git (acorn), https://github.com/babel/babylon (babylon). This software contains the following license and notice below:
+The following software may be included in this product: acorn. A copy of the source code may be downloaded from https://github.com/ternjs/acorn.git. This software contains the following license and notice below:
 
-Copyright (C) 2012-2014 by various contributors (see AUTHORS)
+Copyright (C) 2012-2016 by various contributors (see AUTHORS)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -306,9 +308,9 @@ THE SOFTWARE.
 
 -----
 
-The following software may be included in this product: acorn. A copy of the source code may be downloaded from https://github.com/ternjs/acorn.git. This software contains the following license and notice below:
+The following software may be included in this product: acorn, babylon. A copy of the source code may be downloaded from https://github.com/ternjs/acorn.git (acorn), https://github.com/babel/babylon (babylon). This software contains the following license and notice below:
 
-Copyright (C) 2012-2016 by various contributors (see AUTHORS)
+Copyright (C) 2012-2014 by various contributors (see AUTHORS)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1867,14 +1869,14 @@ The following software may be included in this product: bluebird. A copy of the 
 
 The MIT License (MIT)
 
-Copyright (c) 2013-2015 Petka Antonov
+Copyright (c) 2014 Petka Antonov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+furnished to do so, subject to the following conditions:</p>
 
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
@@ -1893,14 +1895,14 @@ The following software may be included in this product: bluebird. A copy of the 
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Petka Antonov
+Copyright (c) 2013-2015 Petka Antonov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:</p>
+furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
@@ -2734,6 +2736,32 @@ THE SOFTWARE.
 
 -----
 
+The following software may be included in this product: classnames. A copy of the source code may be downloaded from https://github.com/JedWatson/classnames.git. This software contains the following license and notice below:
+
+The MIT License (MIT)
+
+Copyright (c) 2016 Jed Watson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-----
+
 The following software may be included in this product: clean-css. A copy of the source code may be downloaded from https://github.com/jakubpawlowicz/clean-css.git. This software contains the following license and notice below:
 
 Copyright (C) 2015 JakubPawlowicz.com
@@ -2776,7 +2804,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 -----
 
-The following software may be included in this product: cliui. A copy of the source code may be downloaded from http://github.com/yargs/cliui.git. This software contains the following license and notice below:
+The following software may be included in this product: cliui. A copy of the source code may be downloaded from http://github.com/bcoe/cliui.git. This software contains the following license and notice below:
 
 Copyright (c) 2015, Contributors
 
@@ -2896,9 +2924,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 -----
 
-The following software may be included in this product: color-convert, color-string. A copy of the source code may be downloaded from http://github.com/harthur/color-convert.git (color-convert), http://github.com/harthur/color-string.git (color-string). This software contains the following license and notice below:
+The following software may be included in this product: color-convert. A copy of the source code may be downloaded from https://github.com/Qix-/color-convert.git. This software contains the following license and notice below:
 
-Copyright (c) 2011 Heather Arthur <fayearthur@gmail.com>
+Copyright (c) 2011-2016 Heather Arthur <fayearthur@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -2921,9 +2949,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 -----
 
-The following software may be included in this product: color-convert. A copy of the source code may be downloaded from https://github.com/Qix-/color-convert.git. This software contains the following license and notice below:
+The following software may be included in this product: color-convert, color-string. A copy of the source code may be downloaded from http://github.com/harthur/color-convert.git (color-convert), http://github.com/harthur/color-string.git (color-string). This software contains the following license and notice below:
 
-Copyright (c) 2011-2016 Heather Arthur <fayearthur@gmail.com>
+Copyright (c) 2011 Heather Arthur <fayearthur@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -3518,7 +3546,7 @@ The complete list of contributors can be found at: https://github.com/hueniverse
 
 -----
 
-The following software may be included in this product: crypto-browserify. A copy of the source code may be downloaded from git://github.com/dominictarr/crypto-browserify.git. This software contains the following license and notice below:
+The following software may be included in this product: crypto-browserify. A copy of the source code may be downloaded from git://github.com/crypto-browserify/crypto-browserify.git. This software contains the following license and notice below:
 
 The MIT License
 
@@ -3561,7 +3589,7 @@ THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 -----
 
-The following software may be included in this product: css-select, css-what, domelementtype, domhandler, domutils, entities. A copy of the source code may be downloaded from git://github.com/fb55/css-select.git (css-select), https://github.com/fb55/css-what (css-what), git://github.com/FB55/domelementtype.git (domelementtype), git://github.com/fb55/DomHandler.git (domhandler), git://github.com/FB55/domutils.git (domutils), git://github.com/fb55/node-entities.git (entities). This software contains the following license and notice below:
+The following software may be included in this product: css-select, css-what, domelementtype, domhandler, domutils, entities. A copy of the source code may be downloaded from git://github.com/fb55/css-select.git (css-select), https://github.com/fb55/css-what (css-what), git://github.com/FB55/domelementtype.git (domelementtype), git://github.com/fb55/domhandler.git (domhandler), git://github.com/FB55/domutils.git (domutils), git://github.com/fb55/node-entities.git (entities). This software contains the following license and notice below:
 
 Copyright (c) Felix Böhm
 All rights reserved.
@@ -4071,7 +4099,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 -----
 
-The following software may be included in this product: duplexer2. A copy of the source code may be downloaded from git://github.com/deoxxa/duplexer2.git. This software contains the following license and notice below:
+The following software may be included in this product: duplexer2. A copy of the source code may be downloaded from https://github.com/deoxxa/duplexer2.git. This software contains the following license and notice below:
 
 Copyright (c) 2013, Deoxxa Development
 ======================================
@@ -4176,6 +4204,32 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-----
+
+The following software may be included in this product: electron-localshortcut. A copy of the source code may be downloaded from https://github.com/parro-it/electron-localshortcut.git. This software contains the following license and notice below:
+
+The MIT License (MIT)
+Copyright (c) 2016 Andrea Parodi
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
 
 -----
 
@@ -5293,7 +5347,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 -----
 
-The following software may be included in this product: form-data. A copy of the source code may be downloaded from git://github.com/form-data/form-data.git. This software contains the following license and notice below:
+The following software may be included in this product: form-data. A copy of the source code may be downloaded from git://github.com/felixge/node-form-data.git. This software contains the following license and notice below:
 
 Copyright (c) 2012 Felix Geisendörfer (felix@debuggable.com) and contributors
 
@@ -8131,6 +8185,32 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 -----
 
+The following software may be included in this product: normalize.css. A copy of the source code may be downloaded from https://github.com/necolas/normalize.css.git. This software contains the following license and notice below:
+
+# The MIT License (MIT)
+
+Copyright © Nicolas Gallagher and Jonathan Neal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-----
+
 The following software may be included in this product: npm-install-package. A copy of the source code may be downloaded from https://github.com/yoshuawuyts/npm-install-package.git. This software contains the following license and notice below:
 
 The MIT License (MIT)
@@ -9733,7 +9813,7 @@ SOFTWARE.
 
 The following software may be included in this product: rx. A copy of the source code may be downloaded from https://github.com/Reactive-Extensions/RxJS.git. This software contains the following license and notice below:
 
-Copyright (c) Microsoft.  All rights reserved.
+Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.
 Microsoft Open Technologies would like to thank its contributors, a list
 of whom are at http://rx.codeplex.com/wikipage?title=Contributors.
 
@@ -9753,7 +9833,7 @@ and limitations under the License.
 
 The following software may be included in this product: rx. A copy of the source code may be downloaded from https://github.com/Reactive-Extensions/RxJS.git. This software contains the following license and notice below:
 
-Copyright (c) Microsoft Open Technologies, Inc.  All rights reserved.
+Copyright (c) Microsoft.  All rights reserved.
 Microsoft Open Technologies would like to thank its contributors, a list
 of whom are at http://rx.codeplex.com/wikipage?title=Contributors.
 
