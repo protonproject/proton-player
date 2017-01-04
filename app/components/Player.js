@@ -2,9 +2,12 @@ import React, {
   Component,
   PropTypes
 } from 'react';
+import { remote } from 'electron';
 import Controls from './Controls';
 import styles from './Player.css';
 import * as playerEvents from '../constants/supportedEvents';
+
+const registerShortcut = remote.require('electron-localshortcut');
 
 class Player extends Component {
   static propTypes = {
@@ -27,6 +30,9 @@ class Player extends Component {
   componentDidMount() {
     document.addEventListener('dragover', e => e.preventDefault());
     document.addEventListener('drop', this.onDrop);
+    registerShortcut.register('Space', () => {
+      this.props.togglePause();
+    });
     this.props.renderVideo(this.playerCanvas);
     this.props.addEventLister(playerEvents.POSITION_CHANGED, (position) => {
       this.setState({
