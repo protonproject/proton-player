@@ -11,10 +11,9 @@ import * as types from '../constants/actionTypes';
  */
 export default function (state: Object = {}, action: Object): Object {
   switch (action.type) {
-    case types.PLAY:
+    case types.MEDIA_CHANGED:
       return {
         ...state,
-        playing: true,
         nowPlaying: action.data
       };
     case types.PLAYBACK_STATUS_CHANGED:

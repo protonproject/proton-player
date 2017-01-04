@@ -12,6 +12,8 @@ export default function worker(action, player) {
     case types.ADD_PLAYER_EVENT:
       player.addEventListener(action.payload.eventName, action.payload.callback);
       return true;
+    case types.MEDIA_CHANGED:
+      return player.nowPlaying();
     default:
       return null;
   }

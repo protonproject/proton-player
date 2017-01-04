@@ -29,8 +29,10 @@ class Player {
   play = (file: string): Object | any => {
     const item = this.addToPlaylist(file);
     this.vlc.playlist.playItem(item);
-    return this.vlc.playlist.items[item];
+    return this.nowPlaying();
   };
+
+  nowPlaying = (): Object => this.vlc.playlist.items[this.vlc.playlist.currentItem];
 
   addToPlaylist = (item: string): number => this.vlc.playlist.add(item);
 

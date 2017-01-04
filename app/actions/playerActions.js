@@ -55,6 +55,11 @@ export function updatePlaybackStatus(value: boolean): Action {
     }
   };
 }
+export function updateNowPlying(): CommandAction {
+  return {
+    type: types.MEDIA_CHANGED
+  };
+}
 
 export function syncPlayerState() {
   return (dispatch: Function) => {
@@ -63,6 +68,9 @@ export function syncPlayerState() {
     }));
     dispatch(addEventLister(events.PAUSED, () => {
       dispatch(updatePlaybackStatus(false));
+    }));
+    dispatch(addEventLister(events.MEDIA_CHANGED, () => {
+      dispatch(updateNowPlying(false));
     }));
   };
 }
