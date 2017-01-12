@@ -1,6 +1,6 @@
 .container {
   padding: 15px 20px 20px 20px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   width: 100%;
 }
@@ -8,7 +8,7 @@
 .title {
   font-size: 13px;
   font-weight: lighter;
-  color: #cacaca;
+  color: #f9f9f9;
 }
 
 .controlPanel {
