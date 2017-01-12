@@ -58,6 +58,10 @@ class Player {
 
   setPosition = (value: number): number => (this.vlc.position = (value / 100));
 
+  seek = (seconds: number) => {
+    this.vlc.time = this.vlc.time + (1001 * seconds);
+    return this.vlc.time;
+  };
   addEventListener = (eventName: string, callback: Function) => {
     if (this.eventNames.includes(eventName)) {
       this.vlc[eventName] = callback;

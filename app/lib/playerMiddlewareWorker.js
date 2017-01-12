@@ -14,6 +14,10 @@ export default function worker(action, player) {
       return true;
     case types.MEDIA_CHANGED:
       return player.nowPlaying();
+    case types.SEEK_BACKWARD:
+      return player.seek(-1 * action.payload.value);
+    case types.SEEK_FORWARD:
+      return player.seek(action.payload.value);
     default:
       return null;
   }
