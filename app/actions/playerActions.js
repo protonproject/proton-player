@@ -74,3 +74,20 @@ export function syncPlayerState() {
     }));
   };
 }
+
+export function seekForward(value: number = 5): Action {
+  return {
+    type: types.SEEK_FORWARD,
+    payload: {
+      value
+    }
+  };
+}
+export function seekBackward(value: number = 5): Action {
+  return {
+    type: types.SEEK_BACKWARD,
+    payload: {
+      value
+    }
+  };
+}
