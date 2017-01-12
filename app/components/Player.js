@@ -2,6 +2,7 @@ import React, {
   Component,
   PropTypes
 } from 'react';
+import parseMs from 'parse-ms';
 import { remote } from 'electron';
 import Controls from './Controls';
 import styles from './Player.css';
@@ -23,7 +24,12 @@ class Player extends Component {
   constructor() {
     super();
     this.state = {
-      progress: 0
+      progress: 0,
+      time: {
+        hours: 0,
+        minutes: 0,
+        seconds: 0
+      }
     };
   }
 
@@ -37,6 +43,11 @@ class Player extends Component {
     this.props.addEventLister(playerEvents.POSITION_CHANGED, (position) => {
       this.setState({
         progress: position * 100
+      });
+    });
+    this.props.addEventLister(playerEvents.TIME_CHANGED, (time) => {
+      this.setState({
+        time: parseMs(time)
       });
     });
     this.props.syncPlayerState();
@@ -60,6 +71,7 @@ class Player extends Component {
           {...this.props.nowPlaying}
           togglePause={this.props.togglePause}
           playing={this.props.playing}
+          time={this.state.time}
         />
         <canvas
           className={styles.player}

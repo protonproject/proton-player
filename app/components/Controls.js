@@ -42,6 +42,9 @@ class Controls extends Component {
               trailColor="rgba(217, 217, 217, 0.4)"
               strokeLinecap="square"
             />
+            <div>
+              {`${this.props.time.hours} : ${this.props.time.minutes} : ${this.props.time.seconds}`}
+            </div>
           </div>
           <div className="col-xs-3 col-md-3 col-lg-2 center-lg center-xs middle-lg middle-xs">
             <div className="box icon-container medium-icons center-block">
