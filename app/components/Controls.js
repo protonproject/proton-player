@@ -10,7 +10,17 @@ class Controls extends Component {
     title: PropTypes.string,
     progress: PropTypes.number.isRequired,
     togglePause: PropTypes.func.isRequired,
+    seekForward: PropTypes.func.isRequired,
+    seekBackward: PropTypes.func.isRequired,
     playing: PropTypes.bool.isRequired
+  };
+
+  forward = (e) => {
+    this.props.seekForward();
+  };
+
+  backward = (e) => {
+    this.props.seekBackward();
   };
 
   render() {
@@ -24,13 +34,13 @@ class Controls extends Component {
         <div className={`row ${styles.controlPanel}`}>
           <div className="col-xs-4 col-md-3 col-lg-2 center-xs center-lg middle-xs middle-lg">
             <div className="box icon-container large-icons center-block">
-              <button className="button"><i className="icon-control-rewind"/></button>
+              <button className="button" onClick={this.backward}><i className="icon-control-rewind"/></button>
               <button className="button" onClick={this.props.togglePause}>
                 <i
                   className={this.props.playing ? 'icon-control-pause' : 'icon-control-play'}
                 />
               </button>
-              <button className="button"><i className="icon-control-forward"/></button>
+              <button className="button" onClick={this.forward}><i className="icon-control-forward"/></button>
             </div>
           </div>
           <div className="col-xs-5 col-md-6 col-lg-8 middle-xs middle-lg">

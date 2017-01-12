@@ -18,7 +18,9 @@ class Player extends Component {
     togglePause: PropTypes.func.isRequired,
     nowPlaying: PropTypes.object.isRequired, //eslint-disable-line react/forbid-prop-types
     playing: PropTypes.bool.isRequired,
-    syncPlayerState: PropTypes.func.isRequired
+    syncPlayerState: PropTypes.func.isRequired,
+    seekForward: PropTypes.func.isRequired,
+    seekBackward: PropTypes.func.isRequired
   };
 
   constructor() {
@@ -72,6 +74,8 @@ class Player extends Component {
           togglePause={this.props.togglePause}
           playing={this.props.playing}
           time={this.state.time}
+          seekForward={this.props.seekForward}
+          seekBackward={this.props.seekBackward}
         />
         <canvas
           className={styles.player}
